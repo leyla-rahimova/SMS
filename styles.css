@@ -122,6 +122,19 @@ main {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+img {
+    width: 25%;
+    height: auto;
+}
+
+.students img, .teachers img {
+    float: right;
+}
+
+.parents img, .admin img {
+    float: left;
+}
+
 ul {
     padding-left: 30px;
     text-align: left;
@@ -149,7 +162,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin: auto;
 }
 
 label {
