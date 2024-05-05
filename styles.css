@@ -1,0 +1,204 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+#main-header, #login-header {
+    background-color: #aff1f4;
+    padding: 30px 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#main-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00585d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-link:hover {
+    color: #00484c;
+}
+
+nav .button {
+    padding: 13px 30px;
+    background-color: #90d8ff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#about {
+    color: #00484c;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+#roles h2 {
+    color: #00484c;
+    margin-bottom: 35px;
+}
+
+.students {
+    background-color: #e7d5ff;
+    color: #3a0054;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.parents {
+    background-color: #f9edcc;
+    color: #775900;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.teachers {
+    background-color: #bdffc8;
+    color: #003c0a;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.admin {
+    background-color: #ffe4e4;
+    color: #701f1f;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #aff1f4;
+    color: #00484c;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="email"], input[type="password"], select {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #b3d9ff;
+    color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select {
+    display: block;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+}
+
+.role-icons img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.role-icons img:hover {
+    transform: scale(1.1);
+}
+
+.error-message, .success-message {
+    color: #d8000c;
+    background-color: #ffbaba;
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+@media (min-height: 500px) {
+    form {
+        margin-top: 40px; /* Additional margin for taller screens */
+    }
+}
